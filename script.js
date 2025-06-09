@@ -1,3 +1,10 @@
+let userId = localStorage.getItem("userId");
+if (!userId) {
+  userId = prompt("Enter a username or email to track your progress:");
+  localStorage.setItem("userId", userId);
+}
+
+
 const subjectFiles = [
   "Control.json", "Digital.json", "ElectricalMachines.json", "ElectronicDevices.json",
   "EMFT.json", "Measurement.json", "Microprocessor.json", "Network.json",
@@ -40,15 +47,29 @@ function updateTotalDisplay() {
   updateRemainingDisplay();
 }
 
-function saveProgress(key, checked) {
-  let data = JSON.parse(localStorage.getItem("lectureProgress") || "{}");
-  data[key] = checked;
-  localStorage.setItem("lectureProgress", JSON.stringify(data));
+// function saveProgress(key, checked) {
+//   let data = JSON.parse(localStorage.getItem("lectureProgress") || "{}");
+//   data[key] = checked;
+//   localStorage.setItem("lectureProgress", JSON.stringify(data));
+// }
+function saveProgress(key, value) {
+  fetch('/api/saveProgress', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ user_id: userId, key, value })
+  });
 }
 
-function loadProgress() {
-  return JSON.parse(localStorage.getItem("lectureProgress") || "{}");
+
+
+// function loadProgress() {
+//   return JSON.parse(localStorage.getItem("lectureProgress") || "{}");
+// }
+async function loadProgress() {
+  const res = await fetch(`/api/getProgress?user_id=${userId}`);
+  return await res.json();  // returns an object like { "math_0": true }
 }
+
 
 // === New Feature: Reset Progress ===
 document.getElementById("resetProgress").addEventListener("click", () => {
@@ -206,9 +227,19 @@ function formatSubjectName(key) {
 //   updateTotalDisplay();
 // }
 
+async function getProgressFromCloud(userId) {
+  const res = await fetch(`/api/getProgress?userId=${userId}`);
+  const data = await res.json();
+  return data.progress || {};
+}
+
+
+
 async function loadSubjects() {
   const container = document.getElementById("subjectsContainer");
-  const savedProgress = loadProgress();
+  // const savedProgress = loadProgress();
+  const savedProgress = await getProgressFromCloud("sudakshin");
+
   const sortedFiles = [...subjectFiles].sort();
 
   for (const file of sortedFiles) {
@@ -270,17 +301,29 @@ async function loadSubjects() {
           subjectRemaining += sec;
         }
 
+        async function saveProgressToCloud(userId, progress) {
+  await fetch('/api/saveProgress', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ userId, progress })
+  });
+}
+
+
         checkbox.addEventListener("change", (e) => {
           const secs = parseInt(e.target.dataset.seconds);
           const key = e.target.dataset.key;
           if (e.target.checked) {
             subjectRemaining -= secs;
             remainingSecondsAll -= secs;
-            saveProgress(key, true);
+            // saveProgress(key, true);
+            saveProgressToCloud("sudakshin", loadProgress());
+
           } else {
             subjectRemaining += secs;
             remainingSecondsAll += secs;
-            saveProgress(key, false);
+            // saveProgress(key, false);
+            saveProgressToCloud("sudakshin", loadProgress())
           }
           updateProgressBar();
           updateRemainingDisplay();
