@@ -1,3 +1,5 @@
+// /api/getProgress.js
+
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
@@ -6,23 +8,26 @@ const supabase = createClient(
 );
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
+  if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { userId, progress } = req.body;
+  const { userId } = req.query;
 
-  if (!userId || !progress) {
-    return res.status(400).json({ error: 'Missing userId or progress' });
+  if (!userId) {
+    return res.status(400).json({ error: 'Missing userId' });
   }
 
-  const { error } = await supabase
+  const { data, error } = await supabase
     .from('lecture_progress')
-    .upsert({ user_id: userId, progress });
+    .select('progress')
+    .eq('user_id', userId)
+    .single();
 
   if (error) {
-    return res.status(500).json({ error: 'Failed to save progress' });
+    console.error("Supabase fetch error:", error);
+    return res.status(500).json({ error: 'Failed to fetch progress' });
   }
 
-  return res.status(200).json({ success: true });
+  return res.status(200).json({ progress: data?.progress || {} });
 }
