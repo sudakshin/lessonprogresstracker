@@ -1,0 +1,66 @@
+[
+    {
+      "title": "Lecture-01: Introduction to 8085 Microprocessor",
+      "duration": "1 hrs 40 mins 42 secs"
+    },
+    {
+      "title": "Lecture-02: Internal Architecture of 8085 Microprocessor",
+      "duration": "49 mins 12 secs"
+    },
+    {
+      "title": "Lecture-03: Machine Cycle, Addressing Modes and Memory Interfacing",
+      "duration": "2 hrs 2 mins 47 secs"
+    },
+    {
+      "title": "Lecture-04: Instruction Set and Data Format Part-01",
+      "duration": "1 hrs 55 mins 2 secs"
+    },
+    {
+      "title": "Lecture-05: Instruction Set and Data Format Part-02",
+      "duration": "1 hrs 33 mins 33 secs"
+    },
+    {
+      "title": "Lecture-06: 8085 Programming & Assignment Discussion",
+      "duration": "1 hrs 59 mins 22 secs"
+    },
+    {
+      "title": "Lecture-07: Interrupts in 8085",
+      "duration": "1 hrs 14 mins 19 secs"
+    },
+    {
+      "title": "Lecture-08: Peripheral Devices and I/O Interfacing",
+      "duration": "43 mins 26 secs"
+    },
+    {
+      "title": "Lecture-09: Introduction & Architecture of 8086 Microprocessor",
+      "duration": "1 hrs 7 mins 59 secs"
+    },
+    {
+      "title": "Lecture-10: Instructions Set & Assembly Language Programming of 8086 - 01",
+      "duration": "1 hrs 34 mins 53 secs"
+    },
+    {
+      "title": "Lecture-10.5 : Instructions Set & Assembly Language Programming of 8086 - 02",
+      "duration": "1 hrs 5 mins 7 secs"
+    },
+    {
+      "title": "Lecture-11: I/O Interface 8086",
+      "duration": "39 mins 54 secs"
+    },
+    {
+      "title": "Lecture-12: Assignment Discussion",
+      "duration": "26 mins 40 secs"
+    },
+    {
+      "title": "Lecture-13: Introduction and Architecture of 8051 Microcontroller - 01",
+      "duration": "1 hrs 24 mins 13 secs"
+    },
+    {
+      "title": "Lecture-14: Introduction & Architecture of 8051 Microcontroller Part - 02",
+      "duration": "58 mins 53 secs"
+    },
+    {
+      "title": "Lecture-15: 8051 Instructions Set",
+      "duration": "46 mins 2 secs"
+    }
+  ]

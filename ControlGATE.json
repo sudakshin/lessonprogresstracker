@@ -1,0 +1,122 @@
+[
+    {
+      "title": "Lecture-01: Introduction to Control Systems and Transfer Function",
+      "duration": "1 hrs 21 mins 34 secs"
+    },
+    {
+      "title": "Lecture-02: Basics of Laplace Transform Part-01",
+      "duration": "1 hrs 25 mins 5 secs"
+    },
+    {
+      "title": "Lecture-03: Basics of Laplace Transform Part-02",
+      "duration": "1 hrs 27 mins 9 secs"
+    },
+    {
+      "title": "Lecture-04: Block Diagram Reduction",
+      "duration": "1 hrs 27 mins 48 secs"
+    },
+    {
+      "title": "Lecture-05: Block Diagram Reduction Part-02",
+      "duration": "1 hrs 17 mins 59 secs"
+    },
+    {
+      "title": "Lecture-06: Assignment Discussion",
+      "duration": "1 hrs 15 mins 29 secs"
+    },
+    {
+      "title": "Lecture-07: Signal Flow Graph",
+      "duration": "1 hrs 37 mins 13 secs"
+    },
+    {
+      "title": "Lecture-07.5 : Signal Flow Graph Part-02",
+      "duration": "1 hrs 16 mins 25 secs"
+    },
+    {
+      "title": "Lecture-08: Negative Feedback & Mathematical Modelling Part-01",
+      "duration": "1 hrs 35 mins 23 secs"
+    },
+    {
+      "title": "Lecture-09: Mathematical Modelling Part-02",
+      "duration": "1 hrs 32 mins 16 secs"
+    },
+    {
+      "title": "Lecture-10: Assignment Discussion",
+      "duration": "1 hrs 30 mins 42 secs"
+    },
+    {
+      "title": "Lecture-10.5: Assignment Discussion Part-02",
+      "duration": "1 hrs 21 mins 19 secs"
+    },
+    {
+      "title": "Lecture-11: Introduction to Time Response Analysis",
+      "duration": "1 hrs 35 mins 15 secs"
+    },
+    {
+      "title": "Lecture-12: Transient Response Part-01",
+      "duration": "1 hrs 29 mins 24 secs"
+    },
+    {
+      "title": "Lecture-13: Transient Response Part-02",
+      "duration": "1 hrs 28 mins 51 secs"
+    },
+    {
+      "title": "Lecture-14: Transient Response Part-03",
+      "duration": "1 hrs 30 mins 41 secs"
+    },
+    {
+      "title": "Lecture-15: Assignment Discussion",
+      "duration": "1 hrs 25 mins 44 secs"
+    },
+    {
+      "title": "Lecture-16: Transient Response Part-04",
+      "duration": "1 hrs 27 mins 27 secs"
+    },
+    {
+      "title": "Lecture-17: Transient Response Part-05",
+      "duration": "1 hrs 29 mins 10 secs"
+    },
+    {
+      "title": "Lecture-18: Transient Response Part-06",
+      "duration": "58 mins 16 secs"
+    },
+    {
+      "title": "Lecture-19: Steady State Error Part-01",
+      "duration": "1 hrs 28 mins 31 secs"
+    },
+    {
+      "title": "Lecture-20: Steady State Error Part-02",
+      "duration": "50 mins 23 secs"
+    },
+    {
+      "title": "Lecture-21: Steady State Error Part-03",
+      "duration": "1 hrs 28 mins 22 secs"
+    },
+    {
+      "title": "Lecture-22: Assignment Discussion",
+      "duration": "1 hrs 13 mins 36 secs"
+    },
+    {
+      "title": "Lecture-23: Introduction to Control System Stability",
+      "duration": "1 hrs 34 mins 27 secs"
+    },
+    {
+      "title": "Lecture-24: Routh Criteria Part-01",
+      "duration": "1 hrs 6 mins 58 secs"
+    },
+    {
+      "title": "Lecture-25: Routh Criteria Part-02",
+      "duration": "1 hrs 46 mins 40 secs"
+    },
+    {
+      "title": "Lecture-26: Assignment Discussion",
+      "duration": "1 hrs 24 mins 2 secs"
+    },
+    {
+      "title": "Lecture-27: Routh Criteria Part-03",
+      "duration": "1 hrs 22 mins 53 secs"
+    },
+    {
+      "title": "Lecture-28: Assignment Discussion",
+      "duration": "1 hrs 32 mins 53 secs"
+    }
+  ]

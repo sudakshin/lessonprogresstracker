@@ -1,0 +1,134 @@
+[
+    {
+      "title": "Lecture-01: Introduction to Digital Electronics & Number Systems Part-01",
+      "duration": "1 hrs 31 mins 33 secs"
+    },
+    {
+      "title": "Lecture-02: Number Systems Part-02",
+      "duration": "2 hrs 15 mins 6 secs"
+    },
+    {
+      "title": "Lecture-03: Number Systems Part-03 and Assignment Discussion",
+      "duration": "3 hrs 1 mins 4 secs"
+    },
+    {
+      "title": "Lecture-04: Boolean Algebra & Assignment Discussion (Lecture-02)",
+      "duration": "2 hrs 49 mins 47 secs"
+    },
+    {
+      "title": "Lecture-05: Logic Gates Part-01",
+      "duration": "2 hrs 5 mins 17 secs"
+    },
+    {
+      "title": "Lecture-06: Logic Gates Part-02 & Assignment Discussion (Lecture-03)",
+      "duration": "1 hrs 47 mins 40 secs"
+    },
+    {
+      "title": "Lecture-07: Logic Gates Part-03",
+      "duration": "2 hrs 48 mins 29 secs"
+    },
+    {
+      "title": "Lecture-08: Assignment Discussion",
+      "duration": "2 hrs 6 mins 43 secs"
+    },
+    {
+      "title": "Lecture-09: K-Maps",
+      "duration": "2 hrs 58 mins 47 secs"
+    },
+    {
+      "title": "Lecture-10: Combinational Circuits Part-01",
+      "duration": "2 hrs 50 mins 21 secs"
+    },
+    {
+      "title": "Lecture-11: Combinational Circuits Part-02",
+      "duration": "2 hrs 22 mins 43 secs"
+    },
+    {
+      "title": "Lecture-12: Assignment Discussion",
+      "duration": "1 hrs 58 mins 10 secs"
+    },
+    {
+      "title": "Lecture-13: Multiplexer and Demultiplexer Part-01",
+      "duration": "2 hrs 48 mins 29 secs"
+    },
+    {
+      "title": "Lecture-14: Multiplexer and Demultiplexer Part-02",
+      "duration": "1 hrs 32 mins 11 secs"
+    },
+    {
+      "title": "Lecture-15: Decoders and Encoders Part-01",
+      "duration": "2 hrs 25 mins 41 secs"
+    },
+    {
+      "title": "Lecture-16: Decoders and Encoders Part-02 and Hazards",
+      "duration": "1 hrs 8 mins 54 secs"
+    },
+    {
+      "title": "Lecture-17: Assignment Discussion",
+      "duration": "2 hrs 6 mins 5 secs"
+    },
+    {
+      "title": "Lecture-18: Introduction to Sequential Circuits and Latches and Flip Flops",
+      "duration": "1 hrs 38 mins 43 secs"
+    },
+    {
+      "title": "Lecture-19: Flip Flops Part-01",
+      "duration": "2 hrs 58 mins 1 secs"
+    },
+    {
+      "title": "Lecture-20: Flip Flops Part-02",
+      "duration": "2 hrs 20 mins 9 secs"
+    },
+    {
+      "title": "Lecture-21: Assignment Discussion",
+      "duration": "1 hrs 13 mins 33 secs"
+    },
+    {
+      "title": "Lecture-22: Shift Registers",
+      "duration": "1 hrs 15 mins 17 secs"
+    },
+    {
+      "title": "Lecture-23: Counters Part-01",
+      "duration": "1 hrs 42 mins 6 secs"
+    },
+    {
+      "title": "Lecture-24: Counters Part-02",
+      "duration": "2 hrs 9 mins 1 secs"
+    },
+    {
+      "title": "Lecture-25: Assignment Discussion",
+      "duration": "1 hrs 46 mins 23 secs"
+    },
+    {
+      "title": "Lecture-26: Counters Part-03",
+      "duration": "2 hrs 17 mins 20 secs"
+    },
+    {
+      "title": "Lecture-27: Finite State Machines",
+      "duration": "1 hrs 54 mins 28 secs"
+    },
+    {
+      "title": "Lecture-28: ADC and DAC Part-01",
+      "duration": "1 hrs 29 mins 29 secs"
+    },
+    {
+      "title": "Lecture-29: ADC and DAC Part-02",
+      "duration": "1 hrs 36 mins 36 secs"
+    },
+    {
+      "title": "Lecture-30: Assignment Discussion",
+      "duration": "1 hrs 34 mins 33 secs"
+    },
+    {
+      "title": "Lecture-31: Semiconductor Memories",
+      "duration": "56 mins 38 secs"
+    },
+    {
+      "title": "Lecture-32: Logic Families Part-01",
+      "duration": "1 hrs 57 mins 25 secs"
+    },
+    {
+      "title": "Lecture-33: Logic Families Part-02 and Assignment Discussion",
+      "duration": "1 hrs 2 mins 26 secs"
+    }
+  ]

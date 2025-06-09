@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lecture Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;">
+    <h1 id="mainTitle">Lecture Progress Tracker</h1>
+    
+    <div style="display: flex; flex-wrap: nowrap; gap: 1em; margin-bottom: 1em;">
+    <button id="viewToggle" title="Toggle View">🔁 Grid View</button>
+  <input type="text" id="searchBar" placeholder="Search subjects..." class="control-element" style="flex: 1 1 200px;">
+  <select id="sortOptions" class="control-element">
+    <option value="default">Sort By</option>
+    <option value="completion">Completion %</option>
+    <option value="duration">Total Time</option>
+    <option value="lectures">Lecture Count</option>
+  </select>
+  <button id="resetProgress" class="control-element danger">Reset Progress</button>
+</div>
+  </div>
+  
+  <!-- Total Progress Bar -->
+  <div id="overallProgressContainer">
+    <div class="progress-bar" id="totalProgressBar">
+      <div class="progress" id="totalProgressInner"></div>
+      <div class="progress-percent" id="totalProgressPercent">0%</div>
+    </div>
+    <div id="overallStats" class="remaining"></div>
+  </div>
+  
+  
+
+<div id="subjectsContainer"></div>
+
+<div class="total-summary">
+  Total Time: <span id="totalTime">0</span><br />
+  Remaining Time: <span id="remainingTime">0</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

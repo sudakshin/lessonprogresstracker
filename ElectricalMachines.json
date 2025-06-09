@@ -1,0 +1,210 @@
+[
+    {
+      "title": "Lecture-01: Introduction to Electrical Machines and Electrical Materials",
+      "duration": "1 hrs 56 mins 18 secs"
+    },
+    {
+      "title": "Lecture-02: Laws of Electromagnetism",
+      "duration": "2 hrs 30 mins 50 secs"
+    },
+    {
+      "title": "Lecture-03: Construction of Transformer",
+      "duration": "1 hrs 45 mins 36 secs"
+    },
+    {
+      "title": "Lecture-04: Ideal Transformer",
+      "duration": "1 hrs 40 mins 24 secs"
+    },
+    {
+      "title": "Lecture-05: Phasor Diagram and Practical Transformer",
+      "duration": "1 hrs 51 mins 39 secs"
+    },
+    {
+      "title": "Lecture-06: Assignment Discussion",
+      "duration": "1 hrs 30 mins 42 secs"
+    },
+    {
+      "title": "Lecture-07: Testing of Transformer and Losses",
+      "duration": "2 hrs 12 mins 27 secs"
+    },
+    {
+      "title": "Lecture-08: Efficiency and Voltage Regulation",
+      "duration": "1 hrs 59 mins 47 secs"
+    },
+    {
+      "title": "Lecture-09: Auto Transformer",
+      "duration": "1 hrs 29 mins 25 secs"
+    },
+    {
+      "title": "Lecture-10: Three Phase Transformers Part-01",
+      "duration": "1 hrs 50 mins 10 secs"
+    },
+    {
+      "title": "Lecture-11: Three Phase Transformers Part-02",
+      "duration": "1 hrs 53 mins 18 secs"
+    },
+    {
+      "title": "Lecture-12: Assignment Discussion",
+      "duration": "1 hrs 51 mins 16 secs"
+    },
+    {
+      "title": "Lecture-13: Three Phase Transformers Part-03",
+      "duration": "1 hrs 49 mins 43 secs"
+    },
+    {
+      "title": "Lecture-14: Parallel Operation and Miscellaneous Concepts",
+      "duration": "1 hrs 47 mins 8 secs"
+    },
+    {
+      "title": "Lecture-15: Harmonics and Switching Transients",
+      "duration": "1 hrs 45 mins 27 secs"
+    },
+    {
+      "title": "Lecture-16: Introduction to DC Machines",
+      "duration": "2 hrs 14 mins 13 secs"
+    },
+    {
+      "title": "Lecture-17: Basics of DC Machines Part-01",
+      "duration": "1 hrs 59 mins 6 secs"
+    },
+    {
+      "title": "Lecture-18: Assignment Discussion",
+      "duration": "1 hrs 6 mins 12 secs"
+    },
+    {
+      "title": "Lecture-19: Basics of DC Machines Part-02",
+      "duration": "1 hrs 40 mins 30 secs"
+    },
+    {
+      "title": "Lecture-20: Armature Winding",
+      "duration": "1 hrs 57 mins 17 secs"
+    },
+    {
+      "title": "Lecture-21: Commutation and Armature Reaction",
+      "duration": "2 hrs 41 secs"
+    },
+    {
+      "title": "Lecture-22: EMF, Torque and Connections in DC Machines",
+      "duration": "2 hrs 7 mins 9 secs"
+    },
+    {
+      "title": "Lecture-23: Losses, Efficiency and Testing of DC Machines",
+      "duration": "1 hrs 41 mins 44 secs"
+    },
+    {
+      "title": "Lecture-24: Assignment Discussion",
+      "duration": "1 hrs 19 mins 12 secs"
+    },
+    {
+      "title": "Lecture-25: Characteristics of DC Generators & Assignment Discussion",
+      "duration": "1 hrs 59 mins 16 secs"
+    },
+    {
+      "title": "Lecture-26: Characteristics of DC Motors",
+      "duration": "1 hrs 26 mins 57 secs"
+    },
+    {
+      "title": "Lecture-27: Starting and Braking of DC Motors",
+      "duration": "1 hrs 9 mins 54 secs"
+    },
+    {
+      "title": "Lecture-28: Speed Control of DC Motors",
+      "duration": "1 hrs 11 mins 17 secs"
+    },
+    {
+      "title": "Lecture-29: Construction of Synchronous Machines",
+      "duration": "1 hrs 26 mins 35 secs"
+    },
+    {
+      "title": "Lecture-30: Assignment Discussion",
+      "duration": "1 hrs 49 mins 11 secs"
+    },
+    {
+      "title": "Lecture-31: Induced EMF Part-01",
+      "duration": "1 hrs 19 mins 37 secs"
+    },
+    {
+      "title": "Lecture-32: Induced EMF Part-02 and Harmonics",
+      "duration": "1 hrs 42 mins 24 secs"
+    },
+    {
+      "title": "Lecture-33: Developed Torque and Equivalent Circuit",
+      "duration": "1 hrs 46 mins 53 secs"
+    },
+    {
+      "title": "Lecture-34: Characteristics of Synchronous Machine and Voltage Regulation",
+      "duration": "1 hrs 27 mins 44 secs"
+    },
+    {
+      "title": "Lecture-35: Methods to determine Voltage Regulation",
+      "duration": "1 hrs 29 mins"
+    },
+    {
+      "title": "Lecture-36: Assignment Discussion",
+      "duration": "1 hrs 17 mins 5 secs"
+    },
+    {
+      "title": "Lecture-37: Power Angle Equations",
+      "duration": "1 hrs 8 mins 46 secs"
+    },
+    {
+      "title": "Lecture-38: V-Curves and Parallel Operation",
+      "duration": "2 hrs 5 mins 52 secs"
+    },
+    {
+      "title": "Lecture-39: Losses, Efficiency and Salient Pole Machines",
+      "duration": "1 hrs 36 mins 57 secs"
+    },
+    {
+      "title": "Lecture-40: Synchronizing Power, Torque, Power Factor Correction, Hunting and Damper Winding",
+      "duration": "1 hrs 25 mins 20 secs"
+    },
+    {
+      "title": "Lecture-41: Construction of Induction Machines",
+      "duration": "1 hrs 10 mins 5 secs"
+    },
+    {
+      "title": "Lecture-42: Assignment Discussion",
+      "duration": "1 hrs 6 mins 28 secs"
+    },
+    {
+      "title": "Lecture-43: Working of Induction Motor and Inverted IM",
+      "duration": "1 hrs 30 mins 39 secs"
+    },
+    {
+      "title": "Lecture-44: Equivalent Circuit and Power Flow",
+      "duration": "1 hrs 10 mins 28 secs"
+    },
+    {
+      "title": "Lecture-45: Torque Slip Characteristics",
+      "duration": "1 hrs 19 mins 26 secs"
+    },
+    {
+      "title": "Lecture-46: Operating Characteristics, Testing & Stability of IM",
+      "duration": "1 hrs 16 mins 53 secs"
+    },
+    {
+      "title": "Lecture-47: Starting and Braking of Induction Motor",
+      "duration": "1 hrs 53 mins 9 secs"
+    },
+    {
+      "title": "Lecture-48: Assignment Discussion",
+      "duration": "1 hrs 32 mins 32 secs"
+    },
+    {
+      "title": "Lecture-49: Speed Control of Induction Motor",
+      "duration": "1 hrs 38 mins 23 secs"
+    },
+    {
+      "title": "Lecture-50: Single Phase Induction Motor",
+      "duration": "1 hrs 26 mins 23 secs"
+    },
+    {
+      "title": "Lecture-51: Special Machines",
+      "duration": "1 hrs 39 mins 51 secs"
+    },
+    {
+      "title": "Lecture-52: Assignment Discussion",
+      "duration": "49 mins 18 secs"
+    }
+  ]

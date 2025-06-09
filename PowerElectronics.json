@@ -1,0 +1,94 @@
+[
+    {
+      "title": "Lecture-01: Introduction to Power Electronics and Power Semiconductor Switches",
+      "duration": "1 hrs 46 mins 15 secs"
+    },
+    {
+      "title": "Lecture-02: Power Semiconductor Devices Part-01",
+      "duration": "1 hrs 38 mins 30 secs"
+    },
+    {
+      "title": "Lecture-03: Power Semiconductor Devices Part-02",
+      "duration": "1 hrs 44 mins 40 secs"
+    },
+    {
+      "title": "Lecture-04: Thyristors Part-01",
+      "duration": "1 hrs 48 mins 51 secs"
+    },
+    {
+      "title": "Lecture-05: Thyristors Part-02",
+      "duration": "1 hrs 53 mins 58 secs"
+    },
+    {
+      "title": "Lecture-06: Assignment Discussion",
+      "duration": "1 hrs 39 mins 17 secs"
+    },
+    {
+      "title": "Lecture-07: Diode Circuits and Introduction to Phase Controlled Converters",
+      "duration": "1 hrs 27 mins 54 secs"
+    },
+    {
+      "title": "Lecture-08: Single Phase Rectifiers Part-01",
+      "duration": "2 hrs 13 mins 13 secs"
+    },
+    {
+      "title": "Lecture-09: Single Phase Rectifiers Part-02",
+      "duration": "2 hrs 7 mins 18 secs"
+    },
+    {
+      "title": "Lecture-10: Three Phase Rectifiers and Source Inductance",
+      "duration": "2 hrs 15 mins 7 secs"
+    },
+    {
+      "title": "Lecture-10.5: Three Phase Rectifiers and Source Inductance Part-02",
+      "duration": "1 hrs 16 mins 48 secs"
+    },
+    {
+      "title": "Lecture-11: Assignment Discussion",
+      "duration": "1 hrs 46 mins 48 secs"
+    },
+    {
+      "title": "Lecture-12: Step Down Chopper and Buck Converter",
+      "duration": "1 hrs 40 mins 52 secs"
+    },
+    {
+      "title": "Lecture-13: Boost and Buck Boost Converters",
+      "duration": "1 hrs 17 mins"
+    },
+    {
+      "title": "Lecture-14: Thyristor Commutation",
+      "duration": "1 hrs 21 mins 9 secs"
+    },
+    {
+      "title": "Lecture-15: Single Phase Inverters",
+      "duration": "1 hrs 50 mins 15 secs"
+    },
+    {
+      "title": "Lecture-16: Three Phase Inverters and Pulse Width Modulation",
+      "duration": "1 hrs 47 mins 11 secs"
+    },
+    {
+      "title": "Lecture-17: Assignment Discussion",
+      "duration": "1 hrs 43 mins 6 secs"
+    },
+    {
+      "title": "Lecture-18: AC Voltage Regulators",
+      "duration": "52 mins 50 secs"
+    },
+    {
+      "title": "Lecture-19: SMPS",
+      "duration": "1 hrs 23 mins 31 secs"
+    },
+    {
+      "title": "Lecture-20: Dual Converters and Cycloconverters",
+      "duration": "45 mins 41 secs"
+    },
+    {
+      "title": "Lecture-21: AC and DC Drives",
+      "duration": "58 mins 44 secs"
+    },
+    {
+      "title": "Lecture-22: Assignment Discussion",
+      "duration": "42 mins 55 secs"
+    }
+  ]

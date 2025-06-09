@@ -1,0 +1,134 @@
+[
+    {
+      "title": "Lecture-01: Introduction to Network Analysis",
+      "duration": "1 hrs 36 mins 21 secs"
+    },
+    {
+      "title": "Lecture-02: Classification of Network Elements",
+      "duration": "1 hrs 24 mins 2 secs"
+    },
+    {
+      "title": "Lecture-03: Network Elements",
+      "duration": "1 hrs 34 mins 12 secs"
+    },
+    {
+      "title": "Lecture-04: Network Elements & Kirchoff's Laws and Nodal and Mesh Analysis",
+      "duration": "1 hrs 47 mins 35 secs"
+    },
+    {
+      "title": "Lecture-05: Connections in a Network",
+      "duration": "1 hrs 51 mins 1 secs"
+    },
+    {
+      "title": "Lecture-05.5: Connections in a Network Part-02",
+      "duration": "54 mins 50 secs"
+    },
+    {
+      "title": "Lecture-06: Assignment Discussion",
+      "duration": "2 hrs 6 mins 25 secs"
+    },
+    {
+      "title": "Lecture-07: Average & RMS Values",
+      "duration": "1 hrs 18 mins 20 secs"
+    },
+    {
+      "title": "Lecture-08: DC Network Theorems Part-01",
+      "duration": "1 hrs 51 mins 54 secs"
+    },
+    {
+      "title": "Lecture-09: DC Network Theorems Part-02",
+      "duration": "1 hrs 20 mins 5 secs"
+    },
+    {
+      "title": "Lecture-10: Transients Part-01",
+      "duration": "1 hrs 31 mins 48 secs"
+    },
+    {
+      "title": "Lecture-11: Transients Part-02",
+      "duration": "2 hrs 18 mins 44 secs"
+    },
+    {
+      "title": "Lecture-12: Assignment Discussion",
+      "duration": "2 hrs 11 mins 17 secs"
+    },
+    {
+      "title": "Lecture-12.5: Assignment Discussion Part-02",
+      "duration": "28 mins 26 secs"
+    },
+    {
+      "title": "Lecture-13: Transients Part-03",
+      "duration": "2 hrs 13 mins 23 secs"
+    },
+    {
+      "title": "Lecture-14: Introduction to AC Analysis and Phasor Diagrams",
+      "duration": "2 hrs 4 mins 12 secs"
+    },
+    {
+      "title": "Lecture-15: Phasor Diagrams Part-02",
+      "duration": "1 hrs 52 mins 27 secs"
+    },
+    {
+      "title": "Lecture-16: Power in AC Circuits",
+      "duration": "2 hrs 6 mins 12 secs"
+    },
+    {
+      "title": "Lecture-17: AC Network Theorems",
+      "duration": "1 hrs 58 mins 40 secs"
+    },
+    {
+      "title": "Lecture-18: Assignment Discussion",
+      "duration": "2 hrs 22 mins 27 secs"
+    },
+    {
+      "title": "Lecture-19: Resonance Part-01",
+      "duration": "1 hrs 24 mins 44 secs"
+    },
+    {
+      "title": "Lecture-20: Resonance Part-02 and Passive Filters",
+      "duration": "2 hrs 9 mins 47 secs"
+    },
+    {
+      "title": "Lecture-20.5: Assignment Discussion",
+      "duration": "1 hrs 41 mins 26 secs"
+    },
+    {
+      "title": "Lecture-21: Two Port Networks",
+      "duration": "1 hrs 48 mins 16 secs"
+    },
+    {
+      "title": "Lecture-22: Graph Theory",
+      "duration": "1 hrs 33 mins 57 secs"
+    },
+    {
+      "title": "Lecture-23: Magnetically Coupled Circuits",
+      "duration": "1 hrs 57 mins 32 secs"
+    },
+    {
+      "title": "Lecture-24: Three Phase Circuits",
+      "duration": "1 hrs 46 mins 12 secs"
+    },
+    {
+      "title": "Lecture-25: Assignment Discussion",
+      "duration": "1 hrs 57 mins 46 secs"
+    },
+    {
+      "title": "Lecture-26: Network Functions and Network Synthesis",
+      "duration": "2 hrs 2 mins 53 secs"
+    },
+    {
+      "title": "Lecture-27: Magnetic Materials and Flux, MMf, Reluctance",
+      "duration": "1 hrs 40 mins 44 secs"
+    },
+    {
+      "title": "Lecture-28: Electric & Magnetic Field Calculations",
+      "duration": "1 hrs 51 mins 30 secs"
+    },
+    {
+      "title": "Lecture-29: Electromagnetic Induction",
+      "duration": "1 hrs 27 mins 38 secs"
+    },
+    {
+      "title": "Lecture-30: Assignment Discussion",
+      "duration": "1 hrs 28 mins 17 secs"
+    }
+  ]
