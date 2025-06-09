@@ -227,11 +227,17 @@ function formatSubjectName(key) {
 //   updateTotalDisplay();
 // }
 
-async function getProgressFromCloud(userId) {
-  const res = await fetch(`/api/getProgress?userId=${userId}`);
-  const data = await res.json();
-  return data.progress || {};
-}
+const getProgressFromCloud = async (userId) => {
+  try {
+    const res = await fetch(`/api/getProgress?userId=${userId}`);
+    const data = await res.json();
+    return data.progress;
+  } catch (e) {
+    console.error('Error loading progress', e);
+    return {};
+  }
+};
+
 
 
 
