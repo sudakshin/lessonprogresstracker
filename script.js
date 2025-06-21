@@ -40,11 +40,14 @@ function updateTotalDisplay() {
   updateRemainingDisplay();
 }
 
-function saveProgress(key, checked) {
+function saveProgress(key, checked, remark = null) {
   let data = JSON.parse(localStorage.getItem("lectureProgress") || "{}");
-  data[key] = checked;
+  if (!data[key]) data[key] = {};
+  data[key].checked = checked;
+  if (remark !== null) data[key].remark = remark;
   localStorage.setItem("lectureProgress", JSON.stringify(data));
 }
+
 
 function loadProgress() {
   return JSON.parse(localStorage.getItem("lectureProgress") || "{}");
@@ -63,8 +66,6 @@ function formatSubjectName(key) {
   return key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/([A-Z])([A-Z][a-z])/g, '$1 $2').trim();
 }
 
-
-
 // async function loadSubjects() {
 //   const container = document.getElementById("subjectsContainer");
 //   const savedProgress = loadProgress();
@@ -82,6 +83,7 @@ function formatSubjectName(key) {
 
 //       const subjectDiv = document.createElement("div");
 //       subjectDiv.className = "subject";
+//       subjectDiv.dataset.lectures = lectures.length;
 
 //       const title = document.createElement("div");
 //       title.className = "subject-title";
@@ -104,7 +106,7 @@ function formatSubjectName(key) {
 
 //       const lectureList = document.createElement("div");
 //       lectureList.className = "lectures";
-//       lectureList.style.display = "none"; // Make sure it's collapsed by default
+//       lectureList.style.display = "none";
 
 //       for (let i = 0; i < lectures.length; i++) {
 //         const lecture = lectures[i];
@@ -148,7 +150,6 @@ function formatSubjectName(key) {
 //         const label = document.createElement("label");
 //         label.innerHTML = `<strong>${lecture.title}</strong> <span style="color:#ffc107;">(${lecture.duration})</span>`;
 
-
 //         row.appendChild(checkbox);
 //         row.appendChild(label);
 //         lectureList.appendChild(row);
@@ -159,6 +160,8 @@ function formatSubjectName(key) {
 
 //       function updateProgressBar() {
 //         const percent = 100 - Math.round((subjectRemaining / subjectTotal) * 100);
+//         subjectDiv.dataset.percent = percent;
+//         subjectDiv.dataset.total = subjectTotal;
 //         progressInner.style.width = percent + "%";
 //         progressPercent.innerText = `${percent}%`;
 //       }
@@ -167,27 +170,17 @@ function formatSubjectName(key) {
 //       updateOverallProgress();
 //       remainingEl.innerText = `Remaining: ${formatTime(subjectRemaining)}`;
 
-//       // Expand/collapse entire div
 //       subjectDiv.addEventListener("click", (e) => {
 //         if (e.target.tagName === 'INPUT') return;
-      
-//         // If in grid view, switch to list view and scroll to subject
 //         if (document.body.classList.contains("grid-view")) {
 //           document.body.classList.remove("grid-view");
 //           document.getElementById("viewToggle").innerText = "🔁 Grid View";
-      
-//           // Collapse all other subjects
 //           document.querySelectorAll(".lectures").forEach(lec => lec.style.display = "none");
-      
-//           // Expand this one
 //           lectureList.style.display = "block";
-      
-//           // Scroll into view
 //           setTimeout(() => {
 //             subjectDiv.scrollIntoView({ behavior: "smooth", block: "center" });
-//           }, 100); // Small delay ensures DOM is updated
+//           }, 100);
 //         } else {
-//           // Toggle in list view
 //           lectureList.style.display = lectureList.style.display === "block" ? "none" : "block";
 //         }
 //       });
@@ -202,7 +195,6 @@ function formatSubjectName(key) {
 //       console.error(`Failed to load ${file}:`, err);
 //     }
 //   }
-
 //   updateTotalDisplay();
 // }
 
@@ -263,12 +255,28 @@ async function loadSubjects() {
         checkbox.dataset.seconds = sec;
         checkbox.dataset.key = uniqueKey;
 
-        if (savedProgress[uniqueKey]) {
+        const saved = savedProgress[uniqueKey] || {};
+
+        if (saved.checked) {
           checkbox.checked = true;
           completedLectures++;
         } else {
           subjectRemaining += sec;
         }
+
+        const label = document.createElement("label");
+        label.innerHTML = `<strong>${lecture.title}</strong> <span style="color:#ffc107;">(${lecture.duration})</span>`;
+
+        // === New: Remark Input ===
+        const remarkInput = document.createElement("input");
+        remarkInput.type = "text";
+        remarkInput.placeholder = "Add a remark...";
+        remarkInput.className = "remark-input";
+        remarkInput.value = saved.remark || "";
+
+        remarkInput.addEventListener("input", () => {
+          saveProgress(uniqueKey, checkbox.checked, remarkInput.value);
+        });
 
         checkbox.addEventListener("change", (e) => {
           const secs = parseInt(e.target.dataset.seconds);
@@ -276,22 +284,20 @@ async function loadSubjects() {
           if (e.target.checked) {
             subjectRemaining -= secs;
             remainingSecondsAll -= secs;
-            saveProgress(key, true);
+            saveProgress(key, true, remarkInput.value);
           } else {
             subjectRemaining += secs;
             remainingSecondsAll += secs;
-            saveProgress(key, false);
+            saveProgress(key, false, remarkInput.value);
           }
           updateProgressBar();
           updateRemainingDisplay();
           remainingEl.innerText = `Remaining: ${formatTime(subjectRemaining)}`;
         });
 
-        const label = document.createElement("label");
-        label.innerHTML = `<strong>${lecture.title}</strong> <span style="color:#ffc107;">(${lecture.duration})</span>`;
-
         row.appendChild(checkbox);
         row.appendChild(label);
+        row.appendChild(remarkInput); // 👈 Add to DOM
         lectureList.appendChild(row);
       }
 
@@ -311,7 +317,7 @@ async function loadSubjects() {
       remainingEl.innerText = `Remaining: ${formatTime(subjectRemaining)}`;
 
       subjectDiv.addEventListener("click", (e) => {
-        if (e.target.tagName === 'INPUT') return;
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         if (document.body.classList.contains("grid-view")) {
           document.body.classList.remove("grid-view");
           document.getElementById("viewToggle").innerText = "🔁 Grid View";
@@ -403,7 +409,7 @@ document.getElementById("sortOptions").addEventListener("change", () => {
 
 // Export Progress
 document.getElementById("exportProgress").addEventListener("click", () => {
-  const data = localStorage.getItem("lectureProgress") || "{}";
+  const data = JSON.stringify(JSON.parse(localStorage.getItem("lectureProgress") || "{}"), null, 2);
   const blob = new Blob([data], { type: "application/json" });
   const url = URL.createObjectURL(blob);
 
