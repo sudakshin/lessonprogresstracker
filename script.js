@@ -400,3 +400,46 @@ document.getElementById("sortOptions").addEventListener("change", () => {
   container.innerHTML = "";
   subjects.forEach(el => container.appendChild(el));
 });
+
+// Export Progress
+document.getElementById("exportProgress").addEventListener("click", () => {
+  const data = localStorage.getItem("lectureProgress") || "{}";
+  const blob = new Blob([data], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "lecture_progress.json";
+  a.click();
+
+  URL.revokeObjectURL(url);
+});
+
+// Trigger file input
+document.getElementById("triggerImport").addEventListener("click", () => {
+  document.getElementById("importProgress").click();
+});
+
+// Import Progress
+document.getElementById("importProgress").addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    try {
+      const imported = JSON.parse(event.target.result);
+      if (typeof imported === "object" && !Array.isArray(imported)) {
+        localStorage.setItem("lectureProgress", JSON.stringify(imported));
+        alert("Progress imported successfully!");
+        location.reload();
+      } else {
+        alert("Invalid progress file format.");
+      }
+    } catch (err) {
+      alert("Failed to import progress: " + err.message);
+    }
+  };
+
+  reader.readAsText(file);
+});
