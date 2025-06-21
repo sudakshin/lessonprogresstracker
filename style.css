@@ -231,3 +231,20 @@ input[type="checkbox"] {
   color: #ffeb3b;
   outline: none;
 }
+.subject-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lecture-remaining-count {
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* In grid view, push the count to the next line */
+body.grid-view .subject-title {
+  flex-direction: column;
+  align-items: flex-start;
+}
